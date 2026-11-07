@@ -4,11 +4,144 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ul li {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  max-width: 392px;
+  border: none;
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.gallery {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery li {
+  border: none;
+  padding: 0;
+  width: 360px;
+  height: 300px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 140px 8px 16px;
+  margin-bottom: 24px;
+}
+
+#name-input:hover {
+  border: 1px solid black;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+}
+
+button {
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background-color: #fff;
+}
+.change-color {
+  width: 148px;
 }
